@@ -1,6 +1,6 @@
-#include "Lua/ScriptCommands/DolceScriptCommands.h"
-#include "Lua/ScriptCommands/ImGui/ImGuiScriptCommands.h"
-#include "Lua/LuaDolceWindow.h"
+#include "ScriptCommands/DolceScriptCommands.h"
+#include "ScriptCommands/ImGui/ImGuiScriptCommands.h"
+#include "LuaDolceWindow.h"
 #include "Dolce.h"
 #include "sol/sol.hpp"
 

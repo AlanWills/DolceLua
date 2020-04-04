@@ -1,4 +1,4 @@
-#include "Lua/ScriptCommands/ImGui/ImGuiScriptCommands.h"
+#include "ScriptCommands/ImGui/ImGuiScriptCommands.h"
 #include "sol/sol.hpp"
 
 #include "imgui.h"
