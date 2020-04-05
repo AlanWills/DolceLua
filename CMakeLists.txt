@@ -30,11 +30,11 @@ set_target_properties(${PROJECT_NAME} PROPERTIES
 target_include_directories(${PROJECT_NAME} PUBLIC
     ${LUA_PROJECT_DIR}/src
     ${LUA_PROJECT_DIR}/build    #for luaconf.h
-    ${SOL2_PROJECT_DIR}/include
     ${DOLCE_LUA_PROJECT_DIR}/Include)
 
 target_link_libraries(${PROJECT_NAME} PUBLIC
     liblua
+    sol2
     Dolce)
 
 target_compile_options(${PROJECT_NAME} PRIVATE /MP4 /W4 /WX)
