@@ -28,13 +28,12 @@ set_target_properties(${PROJECT_NAME} PROPERTIES
     CXX_STANDARD 17)
     
 target_include_directories(${PROJECT_NAME} PUBLIC
-    ${LUA_PROJECT_DIR}/src
-    ${LUA_PROJECT_DIR}/build    #for luaconf.h
-    ${DOLCE_LUA_PROJECT_DIR}/Include)
+    ${CMAKE_CURRENT_SOURCE_DIR}/Include)
 
 target_link_libraries(${PROJECT_NAME} PUBLIC
     liblua
     sol2
+    Lua
     Dolce)
 
 target_compile_options(${PROJECT_NAME} PRIVATE /MP4 /W4 /WX)
