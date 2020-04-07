@@ -1,9 +1,8 @@
 #include "ScriptCommands/DolceScriptCommands.h"
 #include "ScriptCommands/ImGui/ImGuiScriptCommands.h"
+#include "Lua/LuaState.h"
 #include "LuaDolceWindow.h"
 #include "Dolce.h"
-#include "sol/sol.hpp"
-
 
 namespace Dolce::Lua::ScriptCommands
 {
@@ -24,5 +23,7 @@ namespace Dolce::Lua::ScriptCommands
       "Dolce",
       "instance", sol::make_object(state.lua_state(), &dolce),
       "registerWindow", &Internals::registerWindow);
+
+    Celeste::Lua::LuaState::requireModule("Debug.DolceWindows");
   }
 }
