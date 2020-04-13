@@ -4,4 +4,4 @@ set(LIBS
     Lua
     Dolce)
 
-build_library(NAME DolceLua FOLDER Dolce/Lua TYPE STATIC LIBS "${LIBS}")
+build_library(NAME DolceLua FOLDER Dolce TYPE STATIC LIBS "${LIBS}")
